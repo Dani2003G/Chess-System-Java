@@ -16,7 +16,7 @@ public class Board {
         pieces = new Piece[rows][colums];
     }
 
-    // GET abd SET
+    // GET and SET
 
     public Integer getRows() {
         return rows;
@@ -34,4 +34,14 @@ public class Board {
         this.colums = colums;
     }
    
+    // METHODS
+
+    public Piece piece(int row, int colum){
+        return pieces[row][colum];
+    }
+
+    public Piece piece(Position position){
+        return pieces[position.getRow()][position.getColum()];
+    }
+
 }
