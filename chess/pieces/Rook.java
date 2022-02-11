@@ -7,9 +7,13 @@ import chess.enums.Color;
 
 public class Rook extends ChessPiece{
 
+    // CONSTRUCTORS
+
     public Rook(Board board, Color color) {
         super(board, color);
     }
+
+    // METHODS
 
     @Override
     public String toString(){
